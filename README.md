@@ -1,40 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🏠 ALX Listing App
 
-## Getting Started
+The **ALX Listing App** is a modern web application scaffolded as part of the **ALX Intermediate Frontend Program**.  
+It serves as the foundation for building an **Airbnb clone** with a scalable, production-ready setup using **Next.js, TypeScript, TailwindCSS, and ESLint**.  
 
-First, run the development server:
+This milestone (Milestone 1) focuses on **scaffolding and initial setup** for a property listing page, ensuring code quality, reusability, and scalability.
+
+---
+
+## 🎯 Project Goals
+
+- Scaffold a **Next.js project** with production-ready configurations.  
+- Integrate **TypeScript** for type safety and maintainability.  
+- Configure **TailwindCSS** for responsive, accessible, and modern UI development.  
+- Implement **ESLint** to enforce code quality and consistency.  
+- Establish a **scalable folder structure** for real-world applications.  
+- Create **reusable UI components** (Card & Button).  
+- Manage assets under a centralized `public/assets` folder.  
+
+---
+
+## 📂 Project Structure
+
+```
+
+alx-listing-app/
+├── components/          # Reusable UI components
+│   └── common/          # Core components shared across the app
+│       ├── Button.tsx   # Reusable button component
+│       └── Card.tsx     # Reusable card component
+│
+├── constants/           # Centralized constants (API URLs, UI text, etc.)
+│   └── index.ts
+│
+├── interfaces/          # TypeScript interfaces for type safety
+│   └── index.ts
+│
+├── pages/               # Next.js Pages Router
+│   └── index.tsx        # Home / Listing page
+│
+├── public/              # Public assets accessible in the app
+│   └── assets/          # Images, SVGs, placeholders
+│
+├── styles/              # Global styling
+│   └── globals.css
+│
+├── README.md            # Project documentation
+├── tailwind.config.js   # TailwindCSS configuration
+├── tsconfig.json        # TypeScript configuration
+└── package.json         # Dependencies and scripts
+
+
+---
+
+## 🧩 Components
+
+- **Card Component (`components/common/Card.tsx`)**  
+  Displays property details (image, title, description) in a reusable format.
+
+- **Button Component (`components/common/Button.tsx`)**  
+  A styled button for actions like "Book Now" or "View Details".
+
+---
+
+## ⚡ Tech Stack
+
+- **[Next.js 13+ (Pages Router)](https://nextjs.org/)** – React framework for SSR & SSG.  
+- **[TypeScript](https://www.typescriptlang.org/)** – Type safety and maintainability.  
+- **[TailwindCSS](https://tailwindcss.com/)** – Utility-first CSS for responsive design.  
+- **[ESLint](https://eslint.org/)** – Code linting and best practices enforcement.  
+
+
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/alx-listing-app.git
+cd alx-listing-app
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Open in Browser
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Visit [http://localhost:3000](http://localhost:3000) to see the app running.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🖼️ Assets
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All assets (images, icons, SVGs) are located in the `public/assets/` folder.
+Example usage:
 
-## Learn More
+```tsx
+<img src="/assets/placeholder.jpg" alt="Property" />
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## ✅ Milestone 1 Deliverables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* [x] Scaffolded **Next.js + TypeScript + TailwindCSS + ESLint** project.
+* [x] Established clean **folder structure**.
+* [x] Created **Card** and **Button** reusable components.
+* [x] Defined **TypeScript interfaces** for props.
+* [x] Organized assets under **public/assets/**.
+* [x] Added **README.md** with setup and documentation.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👨‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Developed by **Biniyam Beyene**
+As part of the **ALX Intermediate Frontend – Milestone 1: Scaffolding and Initial Setup for Listing Page**
